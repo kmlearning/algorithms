@@ -21,7 +21,7 @@ def merge_sort(array):
     # if not at lowest level, continue to split
     if len(array) > 1:
 
-        # split it
+        # split array
         mid = len(array) // 2
         left = array[:mid]
         right = array[mid:]
@@ -29,7 +29,7 @@ def merge_sort(array):
         left = merge_sort(left)
         right = merge_sort(right)
 
-        # merge left and right
+        # merge left and right halves
         return merge(left, right)
         
     else:
